@@ -19,9 +19,10 @@ for i in arq.readlines():
 
 for i in lista:
     for j in i:
-        if j not in mesmoGr:
+        mesmoGr.append(j)
+        if len(mesmoGr)!=len(grau):
             regular[0]="O grafo não é regular"
-            mesmoGr.append(j)
+            
     
 
 for i in lista:
