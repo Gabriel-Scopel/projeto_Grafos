@@ -35,6 +35,7 @@ for i in range(0,11):
             
 
 if aresmult[0] or laço[0]:
+    print("O grafo não é simples, pois apresenta:")
     for i in range(int(count/2)):
         print("Aresta multipla presente entre os vértices V",aresmult[i], "e", "V",aresmult[i+1])
     for i in range(len(laço)):
