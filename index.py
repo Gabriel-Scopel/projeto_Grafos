@@ -67,3 +67,77 @@ print("O total de arestas é: %d" %(x/2))
 print(completo[0])
 print(regular[0])
 
+#tentando descobrir se o grafo é ou não bipartido:
+""" lista=[]
+xv=[]
+yv=[]
+arq = open('matriz.txt', 'r')
+for i in arq.readlines():
+    lista.append(i.strip().split(" "))
+
+
+for linha in range(0,10):
+  for coluna in range(0,10):
+    if(linha%2==0):
+      if lista[linha][coluna]!="0":
+        xv.append(coluna+1)
+    if(linha%2!=0):
+      if lista[linha][coluna]!="0":
+        yv.append(coluna+1)
+#0
+#for i in range(0,10):
+    #if lista[0][i]!="0":
+      #xv.append(i)
+#1
+#for i in range(0,10):
+  #if lista[1][i]!="0":
+      #yv.append(i)
+
+print(xv)
+print()
+print(yv) """
+################################################################################################
+#tentativa2
+""" lista=[]
+xv=[]
+yv=[]
+x=[]
+y=[]
+arq = open('matriz.txt', 'r')
+for i in arq.readlines():
+    lista.append(i.strip().split(" "))
+
+
+for linha in range(0,6):
+    for coluna in range(0,6,2):
+      if lista[linha][coluna]!="0":
+        xv.append(coluna+1)
+    #print(linha)
+ # for coluna in range(0,3):
+    #if(linha%2==0):
+      
+      #if lista[linha][coluna]!="0":
+       # xv.append(coluna+1)
+    #print(linha)
+    for coluna in range(1,7,2):
+      if lista[linha][coluna]!="0":
+        yv.append(coluna+1)
+
+
+
+print(xv)
+print()
+print(yv)
+    
+#0
+#for i in range(0,10):
+    #if lista[0][i]!="0":
+      #xv.append(i)
+#1
+#for i in range(0,10):
+  #if lista[1][i]!="0":
+      #yv.append(i)
+""" 
+""" print(xv)
+print()
+print(yv) """  """ """
