@@ -67,6 +67,45 @@ print("O total de arestas é: %d" %(x/2))
 print(completo[0])
 print(regular[0])
 
+
+xv=[]
+yv=[]
+x=[]
+y=[]
+bipartido=["É bipartido"]
+
+for j in range(len(lista[0])):
+  if(j%2==0):
+    for i in range(len(lista[0])):
+        if lista[j][i]!="0":
+          xv.append(i+1)
+  elif(j%2!=0):
+    for i in range(len(lista[0])):
+      if lista[j][i]!="0":
+          yv.append(i+1)
+
+for i in xv:
+  if i not in x:
+    x.append(i)
+
+for i in yv:
+  if i not in y:
+    y.append(i)
+    
+for i in x:
+  for j in y:
+    if(i==j):
+      bipartido[0]="Grafo não é bipartido."
+      
+if(laço):
+    bipartido[0]="Grafo não é bipartido."
+print(bipartido[0])
+
+
+if(bipartido[0]=="É bipartido"):
+    print("Sua bipartição é: ")
+    print("Vertices de um conjunto que denominamos X: ", x)
+    print("Vertices de um conjunto que denominamos Y: ", y)
 #tentando descobrir se o grafo é ou não bipartido:
 """ lista=[]
 xv=[]
