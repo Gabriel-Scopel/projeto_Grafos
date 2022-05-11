@@ -7,14 +7,14 @@ aresmult=[]
 laço=[]
 count=0
 grau=[]
-x=1
+x=0
 mesmoGr=[]
 completo=["O grafo é completo"]
 regular=["O grafo é regular"]
 t_arestas=0
 bi_p_comp=["O grafo não é bipartido completo"]
 
-arq = open('matriz.txt', 'r')
+arq = open('A.txt', 'r')
 
 for i in arq.readlines():
     lista.append(i.strip().split(" "))
