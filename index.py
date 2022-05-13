@@ -1,3 +1,11 @@
+"""
+Integrantes do grupo:
+Gabriel de Souza Scopel / R.A: 22.221.026-2
+Nicolas Costa Coppola de Moraes / RA: 22.122.099-9
+Eduardo Del Freu Messas / RA:221220270
+"""
+
+
 from ast import NotIn
 print()
 lista=[]
