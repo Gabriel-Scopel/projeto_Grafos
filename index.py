@@ -24,7 +24,7 @@ for i in lista:
             regular[0]="O grafo é regular, pois seus vértices possuem mesmo grau."
             
 print(regular[0]) 
-
+print()
 for i in lista:
     somagr=0
     for j in i:
@@ -72,7 +72,7 @@ print()
 print(completo[0])
 print()
 print(regular[0])
-print()
+
 
 
   
@@ -80,8 +80,8 @@ x = [0]
 y = []
 bipar = True
 
-for linha in range(len(lista)):
-	for coluna in range(len(lista)):
+for linha in range(len(lista[0])):
+	for coluna in range(len(lista[0])):
 		if linha in x and int(lista[linha][coluna]) != 0 and coluna not in y:
 			if coluna in x:
 				bipar = False
@@ -91,7 +91,7 @@ for linha in range(len(lista)):
 			if coluna in y:
 				bipar = False
 			else:
-					x.append(coluna)
+				x.append(coluna)
 
 if bipar:
 	print("O grafo é bipartido, pois é possivel dividir os vértices em dois conjuntos disjuntos U e V tais que toda aresta conecta um vértice em U a um vértice em V; ou seja, U e V são conjuntos independentes.")
